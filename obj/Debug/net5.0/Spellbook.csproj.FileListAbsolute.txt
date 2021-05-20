@@ -159,3 +159,4 @@ C:\Users\yoh_a\source\repos\Spellbook\Spellbook\obj\Debug\net5.0\Razor\Views\Adm
 C:\Users\yoh_a\source\repos\Spellbook\Spellbook\obj\Debug\net5.0\Razor\Views\Shared\_HeaderAdmin.cshtml.g.cs
 C:\Users\yoh_a\source\repos\Spellbook\Spellbook\obj\Debug\net5.0\Razor\Views\Shared\_SideBarAdmin.cshtml.g.cs
 C:\Users\yoh_a\source\repos\Spellbook\Spellbook\obj\Debug\net5.0\Razor\Views\Shared\_FooterScriptsAdmin.cshtml.g.cs
+C:\Users\yoh_a\source\repos\Spellbook\Spellbook\obj\Debug\net5.0\Razor\Views\Shared\_FooterAdmin.cshtml.g.cs

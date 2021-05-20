@@ -73,6 +73,7 @@ namespace Spellbook.Controllers
                 HashSalt hashsalt = EncryptPassword(user.Password);
                 user.Uuid = Convert.ToBase64String(Guid.NewGuid().ToByteArray()).Substring(0, 8);
                 user.Status = 1;
+                user.User_Group_Id = 1;
                 user.Salt = hashsalt.Salt;
                 user.Password = hashsalt.Hash;
                 _db.User.Add(user);
