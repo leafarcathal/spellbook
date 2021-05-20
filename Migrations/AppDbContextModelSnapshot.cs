@@ -53,6 +53,32 @@ namespace Spellbook.Migrations
                     b.ToTable("Bill");
                 });
 
+            modelBuilder.Entity("Spellbook.Models.JwtToken", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Created_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Token")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("User_Id")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Valid_Through")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("JwtToken");
+                });
+
             modelBuilder.Entity("Spellbook.Models.Payment", b =>
                 {
                     b.Property<int>("Id")
