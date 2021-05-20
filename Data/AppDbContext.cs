@@ -21,5 +21,6 @@ namespace Spellbook.Data
         public DbSet<Bill> Bill { get; set; }
         public DbSet<Payment> Payment { get; set; }
         public DbSet<PaymentLog> PaymentLog { get; set; }
+        public DbSet<JwtToken> JwtToken { get; set; }
     }
 }
