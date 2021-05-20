@@ -1,0 +1,53 @@
+﻿@model Spellbook.Models.User
+@{
+    ViewData["Title"] = "Login";
+}
+<div class="row mt-5">
+    <div class="col-12 col-md-6 mb-5">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="text-center mb-2">Welcome to Spellbook CRM!</h1>
+                <p class="text-justify">Paying your bills shouldn't be troublesome - that's why Spellbook CRM was made. Organize your bills, renegotiate and keep in touch with your finances - simple as magic, faster than lightning and safe. </p>
+                <p class="text-justify">With Spellbook CRM, you'll be able to:</p>
+                <ul>
+                    <li>Check your bills;</li>
+                    <li>Pay exactly what you can afford - no surprises;</li>
+                    <li>Accept all credit cards and bank policies;</li>
+                    <li>Partial payments in your own schedule;</li>
+                    <li>And much, much more!</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 align-self-center">
+        <form asp-action="Login">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group row">
+                <label asp-for="Email" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input asp-for="Email" type="email" class="form-control" placeholder="Email">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="Password" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input asp-for="Password" type="password" class="form-control" placeholder="Password">
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary w-100">Sign in</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center"><a asp-action="Register">Not registered yet?</a></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
