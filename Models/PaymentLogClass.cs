@@ -4,17 +4,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 
+
 namespace Spellbook.Models
 {
-    public class Permission
+    public class PaymentLog
     {
         [Key]
         public int Id { get; set; }
         [Required]
-        public string Controller { get; set; }
+        public int Payment_Id { get; set; }
         [Required]
-        public string Method { get; set; }
-        public int User_Group_Id { get; set; }
+        public int Status { get; set; }
         public DateTime Created_at { get; set; } = DateTime.UtcNow;
     }
 }

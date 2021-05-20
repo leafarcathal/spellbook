@@ -22,6 +22,6 @@ namespace Spellbook.Models
         public string Uuid { get; set; }
         public DateTime Created_at { get; set; } = DateTime.UtcNow;
         public int Status { get; set; }
-        public int User_group_id { get; set; }
+        public int User_Group_Id { get; set; }
     }
 }

@@ -14,9 +14,9 @@ namespace Spellbook.Models
         [Required]
         public int User_Id { get; set; }
         [CreditCard]
-        public string CardToken { get; set; }
-        public string CardBin { get; set; }
-        public string CardEnding { get; set; }
+        public string Card_Token { get; set; }
+        public string Card_Bin { get; set; }
+        public string Card_Ending { get; set; }
         public string Type { get; set; }
         public int Status { get; set; }
 

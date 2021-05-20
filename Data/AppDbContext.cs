@@ -19,5 +19,7 @@ namespace Spellbook.Data
         public DbSet<Permission> Permission { get; set; }
         public DbSet<PaymentMethod> PaymentMethod { get; set; }
         public DbSet<Bill> Bill { get; set; }
+        public DbSet<Payment> Payment { get; set; }
+        public DbSet<PaymentLog> PaymentLog { get; set; }
     }
 }
