@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Spellbook.Models
 {
-    public class BillMethod
+    public class Bill
     {
         [Key]
         public int Id { get; set; }
